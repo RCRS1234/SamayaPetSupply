@@ -1,3 +1,4 @@
+```javascript
 var images = [
 "images/store.jpg",
 "images/petfood.jpg",
@@ -30,3 +31,4 @@ document.getElementById("popupImage").src = img.src;
 function closePopup(){
 document.getElementById("imagePopup").style.display = "none";
 }
+```
