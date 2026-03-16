@@ -1,114 +1,125 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 
 <title>Products | Samaya Pet and Poultry Supply</title>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<nav class="mobile-nav">
-<div id="menu-links">
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</div>
+<!-- NAVBAR SAME AS INDEX -->
 
-<a class="menu-icon" onclick="hamburger()">
-<div>&#9776;</div>
-</a>
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="index.html">Samaya Pet & Poultry Supply</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="products.html" data-bs-toggle="dropdown">Products</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#foodProducts">Pet Food</a></li>
+<li><a class="dropdown-item" href="#medProducts">Medicines</a></li>
+<li><a class="dropdown-item" href="#toyProducts">Toys</a></li>
+<li><a class="dropdown-item" href="#cageProducts">Cages</a></li>
+</ul>
+
+</li>
+
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+</ul>
+</div>
+</div>
 </nav>
 
-<header>
-<h1>Samaya Pet and Poultry Supply</h1>
-</header>
+<div class="container mt-5">
 
-<nav class="tab-desk">
+<h1>Our Products</h1>
+
+<p>
+Samaya Pet and Poultry Supply provides a variety of products designed to support the daily needs of pets.
+For prices and availability, please visit our store or contact us.
+</p>
+
+<img src="images/pets.jpg" usemap="#petmap" class="img-fluid">
+
+<map name="petmap">
+<area shape="rect" coords="0,0,200,200" href="#foodProducts" alt="Dog">
+<area shape="rect" coords="200,0,400,200" href="#foodProducts" alt="Cat">
+<area shape="rect" coords="400,0,600,200" href="#toyProducts" alt="Bird">
+</map>
+
+<table class="table table-bordered mt-4">
+
+<tr>
+<th>Product Category</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+
+<tr id="foodProducts">
+<td>Pet Food</td>
+<td>Food products for dogs, cats, birds, and fish.</td>
+<td>Available</td>
+</tr>
+
+<tr id="medProducts">
+<td>Medicines</td>
+<td>Health supplements and medicines.</td>
+<td>Available</td>
+</tr>
+
+<tr id="toyProducts">
+<td>Toys</td>
+<td>Play items that keep pets active.</td>
+<td>Available</td>
+</tr>
+
+<tr id="cageProducts">
+<td>Cages</td>
+<td>Cages for birds and small animals.</td>
+<td>Available</td>
+</tr>
+
+</table>
+
+</div>
+
+<hr>
+
+<div class="container">
+
+<h4>Site Map</h4>
+
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="products.html">Products</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
-</nav>
-
-<main>
-
-<div id="products">
-
-<h2>Our Products</h2>
-
-<table>
-
-<caption>Pet Supply Products</caption>
-
-<thead>
-<tr>
-<th>Product</th>
-<th>Price (Small Pack)</th>
-<th>Price (Large Pack)</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>Dog Food</td>
-<td>₱250</td>
-<td>₱480</td>
-</tr>
-
-<tr>
-<td>Cat Food</td>
-<td>₱220</td>
-<td>₱420</td>
-</tr>
-
-<tr>
-<td>Poultry Feeds</td>
-<td>₱900</td>
-<td>₱1700</td>
-</tr>
-
-<tr>
-<td>Pet Vitamins</td>
-<td>₱150</td>
-<td>₱280</td>
-</tr>
-
-<tr>
-<td>Pet Accessories</td>
-<td>₱120</td>
-<td>₱200</td>
-</tr>
-
-</tbody>
-
-</table>
 
 </div>
 
-</main>
-
-<footer>
-
-<div class="copyright">
+<footer class="text-center mt-4">
+<p>Developer: Ryan Cecil R. Salimbagat</p>
 <p>© 2026 Samaya Pet and Poultry Supply</p>
-<p>Website developed by Ryan Cecil Salimbagat</p>
-</div>
-
 </footer>
-
-<script src="scripts/script.js"></script>
 
 </body>
 </html>
